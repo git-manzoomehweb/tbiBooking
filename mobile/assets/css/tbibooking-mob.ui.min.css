@@ -1444,12 +1444,14 @@ section.gallery-about > img:nth-child(5) {
   align-items: center;
   flex-wrap: wrap;
   gap: 4px;
+  justify-content: center;
 }
 
 .reservation-item li {
   padding: 4px 19px !important;
   display: flex !important;
   align-items: center;
+  width: 49%;
   justify-content: center;
   height: auto !important;
   border-radius: 50px;
@@ -2068,3 +2070,4 @@ section.gallery-about > img:nth-child(5) {
 .about-form [data-bc-validation-part] {
   direction: ltr;
 }
+

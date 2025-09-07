@@ -771,6 +771,9 @@ body {
 .w-\[90\%\] {
   width: 90%;
 }
+.z-\[100000\] {
+  z-index: 100000;
+}
 
 .w-full {
   width: 100%;
@@ -785,7 +788,7 @@ body {
 }
 
 .flex-grow-0 {
-    flex-grow: 0;
+  flex-grow: 0;
 }
 
 .flex-grow {
@@ -793,19 +796,19 @@ body {
 }
 
 .basis-\[292px\] {
-    flex-basis: 292px;
+  flex-basis: 292px;
 }
 
 .basis-\[311px\] {
-    flex-basis: 311px;
+  flex-basis: 311px;
 }
 
 .basis-\[350px\] {
-    flex-basis: 350px;
+  flex-basis: 350px;
 }
 
 .basis-\[368px\] {
-    flex-basis: 368px;
+  flex-basis: 368px;
 }
 
 .translate-x-\[1024px\] {
@@ -1024,7 +1027,6 @@ body {
 .bg-secondary-600 {
   background-color: var(--secondary-600);
 }
-
 
 .bg-secondary-800 {
   background-color: var(--secondary-800);
@@ -1440,9 +1442,9 @@ body {
   [data-bc-question-title] {
   display: none !important;
 }
-.footer-form [data-bc-answer-container] input[type="text"]{
-  background-color: #002F51 !important;
-  color: #A1A1AA !important;
+.footer-form [data-bc-answer-container] input[type="text"] {
+  background-color: #002f51 !important;
+  color: #a1a1aa !important;
   height: 50px !important;
   padding: 12px 26px !important;
   font-weight: 400 !important;
@@ -1456,7 +1458,7 @@ body {
   width: 100%;
 }
 .footer-form [data-bc-answer-container] input[type="text"]::placeholder {
-  color: #A1A1AA !important;
+  color: #a1a1aa !important;
 }
 .footer-form [data-bc-answer-container] {
   width: 100% !important;
@@ -1477,6 +1479,32 @@ body {
 .footer-form [data-bc-part] {
   margin-bottom: 0 !important;
 }
- .footer-form [data-bc-validation-part]{
+.footer-form [data-bc-validation-part] {
   direction: ltr;
- }
+}
+body:has(#search-box) .header-landing-items {
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 1024px) {
+  body:has(#search-box) .header-landing-items section.z-30.bg-white.mx-auto {
+    background-color: unset !important;
+  }
+  #search-box {
+    box-shadow: 0 4px 12px #0000001a;
+  }
+}
+.mt-\[-64px\] {
+  margin-top: -64px;
+}
+.mt-\[-35px\] {
+  margin-top: -35px;
+}
+#search-box {
+  box-shadow: 1px 1px 10px #0000001a;
+}
+.h-\[480px\] {
+  height: 480px;
+}

@@ -71,7 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentPath = window.location.pathname;
     const services = ["flight", "hotel", "flighthotel", "tour", "insurance"];
 
-    const isBlockedPage = currentPath === "/" || services.some(service => currentPath === `/${service}`);
+    const isBlockedPage =
+      currentPath === "/" ||
+      services.some((service) => currentPath === `/${service}`);
 
     if (isBlockedPage) {
       return;
@@ -639,7 +641,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let selectedAirline = null;
   let selectedDay = null;
-  let filtersActive = false; 
+  let filtersActive = false;
 
   function filterCards() {
     if (!filtersActive) return;
@@ -679,7 +681,6 @@ document.addEventListener("DOMContentLoaded", () => {
     filterCards();
   }
 
- 
   if (minInput && maxInput) {
     minInput.value = 0;
     maxInput.value = 100;
@@ -693,7 +694,7 @@ document.addEventListener("DOMContentLoaded", () => {
       updatePriceRange();
     });
 
-    updatePriceRange(); 
+    updatePriceRange();
   }
 
   if (airlineFilterContainer) {
@@ -716,7 +717,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  
   if (filterBtn && filterPanel) {
     filterBtn.addEventListener("click", () => {
       filterPanel.classList.remove("translate-y-full");
@@ -733,7 +733,7 @@ document.addEventListener("DOMContentLoaded", () => {
     removeFiltersBtn.addEventListener("click", () => {
       selectedAirline = null;
       selectedDay = null;
-      filtersActive = false; 
+      filtersActive = false;
 
       if (airlineFilterContainer) {
         airlineFilterContainer
@@ -752,7 +752,6 @@ document.addEventListener("DOMContentLoaded", () => {
         updatePriceRange();
       }
 
-     
       cards.forEach((card) => (card.style.display = "flex"));
     });
   }
@@ -1353,3 +1352,12 @@ if (document.querySelector(".swiper-travel-blog-mobile")) {
     loop: true,
   });
 }
+if (document.querySelectorAll(".swiper-seven").length > 0)
+  swiper = new Swiper(".swiper-seven", {
+    slidesPerView: 7,
+    speed: 400,
+    centeredSlides: !1,
+    spaceBetween: 12,
+    grabCursor: !0,
+    loop: 1,
+  });
