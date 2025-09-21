@@ -1508,3 +1508,9 @@ body:has(#search-box) .header-landing-items {
 .h-\[480px\] {
   height: 480px;
 }
+.entertainment:hover {
+  background-color: #fe9001 !important;
+}
+.entertainment:hover a{
+  color: white !important;
+}

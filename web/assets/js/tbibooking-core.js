@@ -1,3 +1,25 @@
+function appendEntertainmentItem() {
+  const ul = document.querySelector(".search-nav");
+  ul.classList.add("flex");
+  ul.classList.add("gap-1");
+  if (window.innerWidth < 1024) {
+    ul.classList.add("flex-col");
+  }
+  if (!ul) return;
+
+  const div = document.createElement("div");
+  div.className =
+    "entertainment text-sm  rounded-[50px] group px-3 my-1 mr-3 cursor-pointer inline-block text-base text-center border-type-1 rounded-type-1 h-8 leading-8";
+
+  const a = document.createElement("a");
+  a.href = "/travel-magazine";
+  a.textContent = "entertainment";
+
+  div.appendChild(a);
+
+  ul.appendChild(div);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const isDesktop = window.innerWidth > 1024;
   const requiredFiles = isDesktop
@@ -35,6 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
             );
             let r = document.querySelector(".flighttype-field");
             r.classList.add("flighttype-dropDown");
+
+            appendEntertainmentItem();
+
             const scripts = container.getElementsByTagName("script");
             for (let i = 0; i < scripts.length; i++) {
               const scriptTag = document.createElement("script");
