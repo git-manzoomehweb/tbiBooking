@@ -779,7 +779,21 @@ body {
 .bg-defaultBg {
   background-image: var(--defaultMob-bg);
 }
-
+.hotel-banner-background {
+  background-image: url("../images/hotel-mob-bg.jpg") !important;
+}
+.flight-banner-background {
+  background-image: url("../images/flight-mob-bg.jpg") !important;
+}
+.flighthotel-banner-background {
+  background-image: url("../images/flighthotel-mob-bg.jpg") !important;
+}
+.tour-banner-background {
+  background-image: url("../images/tour-mob-bg.jpg") !important;
+}
+.insurance-banner-background {
+  background-image: url("../images/insurance-mob-bg.jpg") !important;
+}
 .bg-fade-black {
   background-image: linear-gradient(
     180.6deg,

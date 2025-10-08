@@ -962,15 +962,15 @@ document.addEventListener("DOMContentLoaded", function () {
     content.style.transition = "height 0.5s ease";
 
     button.style.display = "inline-block";
-    button.textContent = "مشاهده بیشتر";
+    button.textContent = "More";
 
     button.addEventListener("click", function () {
       if (!expanded) {
         content.style.height = fullHeight + "px";
-        button.textContent = "نمایش کمتر";
+        button.textContent = "Less";
       } else {
         content.style.height = collapsedHeight + "px";
-        button.textContent = "مشاهده بیشتر";
+        button.textContent = "More";
       }
       expanded = !expanded;
     });

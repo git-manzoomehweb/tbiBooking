@@ -927,7 +927,21 @@ body {
 .bg-defaultBg {
   background-image: var(--defaultPc-bg);
 }
-
+.hotel-banner-background {
+  background-image: url("../images/hotel-pc-bg.jpg") !important;
+}
+.flight-banner-background {
+  background-image: url("../images/flight-pc-bg.jpg") !important;
+}
+.flighthotel-banner-background {
+  background-image: url("../images/flighthotel-pc-bg.jpg") !important;
+}
+.tour-banner-background {
+  background-image: url("../images/tour-pc-bg.jpg") !important;
+}
+.insurance-banner-background {
+  background-image: url("../images/insurance-pc-bg.jpg") !important;
+}
 .bg-fade-black {
   background-image: linear-gradient(
     180.6deg,

@@ -3,7 +3,7 @@
 </basis>
 
 <basis core="dbsource" source="basiscore" lid="2" mid="20" name="our-featured-tours">
-  <member name="cat" type="tree" request="cat" parentid="215685" order="ord"></member>
+  <member name="cat" type="tree" request="cat" parentid="215685"   postsql="select * from [our-featured-tours.cat] order by countid desc"></member>
 </basis>
 
 <basis core="dbsource" source="basiscore" lid="2" mid="1" name="exclusive-travel-deals">
