@@ -948,7 +948,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!content || !button) return;
 
-  const collapsedHeight = 80;
+  const collapsedHeight = 75;
   let expanded = false;
 
   const fullHeight = content.scrollHeight;
