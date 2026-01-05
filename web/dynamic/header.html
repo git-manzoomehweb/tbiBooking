@@ -1,7 +1,7 @@
 <basis core="dbsource" source="basiscore" name="db" mid="5" lid="2" usedforid="[##cms.cms.ownerid##]">
     <member name="info" type="view" />
 </basis>
-<basis core="group" if="'[##cms.cms.page_index##]' = 'نمایه پیش فرض'">
+<basis core="group" if="'[##cms.cms.page_index##]' = 'desktop'">
     <header class="header-landing-items ">
         <section class="relative z-30 bg-white mx-auto max-lg:w-[90%] max-xl:w-[97%] xl:max-w-7xl">
             <div class="flex items-center justify-between">
@@ -93,6 +93,6 @@
     </header>
 </basis>
 
-<basis core="group" if="'[##cms.cms.page_index##]' = 'موبایل'">
+<basis core="group" if="'[##cms.cms.page_index##]' = 'mobile phone'">
     <basis core="call" file="header.inc" lid="2" pageindex="[##cms.cms.pageindex##]"></basis>
 </basis>
